@@ -16,7 +16,7 @@ def menu():
 
 
 def show_products():
-    if not products:
+    if products == [ ]:
         print("Cữa hàng hiện chưa có sản phẩm nào!")
         return
     print("--- DANH SÁCH SẢN PHẨM ---")
@@ -33,7 +33,7 @@ def add_product():
     while True:
         new_id = input("Nhập mã sản phẩm: ")
         new_id = new_id.upper().strip()
-        if new_id == "":
+        if new_id == " ":
             print("Không được để trống!")
             continue
 
